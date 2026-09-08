@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
+<<<<<<< HEAD
         android:label="tugas_mobile_2"
+=======
+        android:label="user_model_app"
+>>>>>>> 0cb6d884dce87caffa3a4fa5baa4aeeb0d178ca3
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

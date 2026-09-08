@@ -7,7 +7,11 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
+<<<<<<< HEAD
 	<string>Tugas Mobile 2</string>
+=======
+	<string>User Model App</string>
+>>>>>>> 0cb6d884dce87caffa3a4fa5baa4aeeb0d178ca3
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,7 +19,11 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
+<<<<<<< HEAD
 	<string>tugas_mobile_2</string>
+=======
+	<string>user_model_app</string>
+>>>>>>> 0cb6d884dce87caffa3a4fa5baa4aeeb0d178ca3
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

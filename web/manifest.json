@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "tugas_mobile_2",
     "short_name": "tugas_mobile_2",
+=======
+    "name": "user_model_app",
+    "short_name": "user_model_app",
+>>>>>>> 0cb6d884dce87caffa3a4fa5baa4aeeb0d178ca3
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

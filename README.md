@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # tugas_mobile_2
+=======
+# user_model_app
+>>>>>>> 0cb6d884dce87caffa3a4fa5baa4aeeb0d178ca3
 
 A new Flutter project.
 

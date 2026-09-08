@@ -1,10 +1,18 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
+<<<<<<< HEAD
 project(tugas_mobile_2 LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "tugas_mobile_2")
+=======
+project(user_model_app LANGUAGES CXX)
+
+# The name of the executable created for the application. Change this to change
+# the on-disk name of your application.
+set(BINARY_NAME "user_model_app")
+>>>>>>> 0cb6d884dce87caffa3a4fa5baa4aeeb0d178ca3
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.
