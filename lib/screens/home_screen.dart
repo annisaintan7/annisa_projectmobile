@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'profile_screen.dart';
+import 'detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -20,13 +20,12 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // 🔥 HEADER BESAR
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.blue,
-              borderRadius: const BorderRadius.only(
+              borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(20),
                 bottomRight: Radius.circular(20),
               ),
@@ -35,7 +34,7 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Selamat Datang 👋",
+                  'Selamat Datang 👋',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
@@ -44,8 +43,10 @@ class HomeScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 5),
                 Text(
-                  "Pilih pengguna untuk melihat detail",
-                  style: TextStyle(color: Colors.white70),
+                  'Pilih pengguna untuk melihat detail',
+                  style: TextStyle(
+                    color: Colors.white70,
+                  ),
                 ),
               ],
             ),
@@ -56,7 +57,7 @@ class HomeScreen extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Text(
-              "Daftar Pengguna",
+              'Daftar Pengguna',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
@@ -66,14 +67,15 @@ class HomeScreen extends StatelessWidget {
 
           const SizedBox(height: 10),
 
-          // 🔥 LIST
           Expanded(
             child: ListView.builder(
               itemCount: users.length,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 6,
+                  ),
                   child: Card(
                     elevation: 4,
                     shape: RoundedRectangleBorder(
@@ -82,18 +84,24 @@ class HomeScreen extends StatelessWidget {
                     child: ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Colors.blue.shade200,
-                        child: const Icon(Icons.person,
-                            color: Colors.white),
+                        child: const Icon(
+                          Icons.person,
+                          color: Colors.white,
+                        ),
                       ),
                       title: Text(users[index]),
-                      subtitle: const Text("Mahasiswa"),
-                      trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                      subtitle: const Text('Mahasiswa'),
+                      trailing: const Icon(
+                        Icons.arrow_forward_ios,
+                        size: 16,
+                      ),
                       onTap: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (_) =>
-                                ProfileScreen(name: users[index]),
+                            builder: (_) => DetailScreen(
+                              name: users[index],
+                            ),
                           ),
                         );
                       },
